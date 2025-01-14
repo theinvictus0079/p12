@@ -17,10 +17,10 @@ const Header = () => {
     <div className="  z-50 relative flex justify-around items-center">
       {/* nav logo */}
       <div
-        className="hover:cursor-pointer hover:bg-black hover:text-white transition-all duration-300 md:text-2xl 
-                      font-semibold border-[2px] hover:px-4 md:px-8 md:py-3 px-4 py-2 border-black"
+        className="hover:cursor-pointer rounded-lg bg-[#da3a3a] hover:shadow-none shadow-lg shadow-red-600 hover:bg-[#eb0f0f] hover:text-white transition-all duration-300 md:text-2xl 
+                      font-semibold  hover:px-4 md:px-8 md:py-3 px-4 py-2 "
       >
-        ⚡INVICTUS⚡
+        invictus⚡
       </div>
 
       {/* nav toggle (visible only on mobile) */}

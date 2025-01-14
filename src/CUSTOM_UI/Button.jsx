@@ -87,7 +87,7 @@ const Button = ({ data }) => {
 
 .fancy:hover {
  color: white;
- background: black;
+ background: #df1313;
 }
 
 .fancy:hover::before {
@@ -122,7 +122,7 @@ const Button = ({ data }) => {
 `}
       </style>
 
-      <a className="fancy" href="#">
+      <a className="fancy " href="#">
         <span className="top-key"></span>
         <span className="text">{data}</span>
         <span className="bottom-key-1"></span>
