@@ -2,11 +2,10 @@ import React from "react";
 
 const NumberUI = ({data}) => {
 
-  console.log(data);
 
   return (
     <div>
-      <div className="hover:border border-red-400 hover:-translate-y-2 group bg-neutral-300 duration-500 md:w-44 md:h-44 w-24 h-28 flex text-neutral-600 flex-col justify-center items-center relative rounded-xl overflow-hidden shadow-md">
+      <div className="border border-red-700 hover:-translate-y-2 group bg-red-500 duration-500 md:w-44 md:h-44 w-24 h-28 flex text-neutral-600 flex-col justify-center items-center relative rounded-xl overflow-hidden shadow-md">
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
@@ -20,8 +19,8 @@ const NumberUI = ({data}) => {
 
         <div className="z-20 flex flex-col justify-center items-center ">
           
-          <span className="font-bold text-3xl md:text-6xl ml-2">{data.n}</span>
-          <p className="font-bold text-center">{data.name}</p>
+          <span className="font-bold text-2xl md:text-3xl ml-2">{data.n}</span>
+          <p className="font-bold text-center md:text-2xl">{data.name}</p>
         </div>
       </div>
     </div>

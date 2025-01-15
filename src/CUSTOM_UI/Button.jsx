@@ -5,14 +5,14 @@ const Button = ({ data }) => {
     <div>
       <style>
         {`
-                
+              
+ 
 .fancy {
- background-color: transparent;
+ background-color: #e21515;
  border: 2px solid #000;
  border-radius: 0;
  box-sizing: border-box;
  color: #fff;
- cursor: pointer;
  display: inline-block;
  float: right;
  font-weight: 700;
@@ -87,7 +87,7 @@ const Button = ({ data }) => {
 
 .fancy:hover {
  color: white;
- background: #df1313;
+ background: #ef6464 ;
 }
 
 .fancy:hover::before {
@@ -122,7 +122,7 @@ const Button = ({ data }) => {
 `}
       </style>
 
-      <a className="fancy " href="#">
+      <a className="fancy cursor-none" href="#">
         <span className="top-key"></span>
         <span className="text">{data}</span>
         <span className="bottom-key-1"></span>

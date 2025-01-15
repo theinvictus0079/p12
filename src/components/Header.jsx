@@ -17,8 +17,8 @@ const Header = () => {
     <div className="  z-50 relative flex justify-around items-center">
       {/* nav logo */}
       <div
-        className="hover:cursor-pointer rounded-lg bg-[#da3a3a] hover:shadow-none shadow-lg shadow-red-600 hover:bg-[#eb0f0f] hover:text-white transition-all duration-300 md:text-2xl 
-                      font-semibold  hover:px-4 md:px-8 md:py-3 px-4 py-2 "
+        className=" rounded-lg bg-[#e21515] hover:shadow-none shadow-lg shadow-red-600 hover:bg-[#eb0f0f] hover:text-white transition-all duration-300 md:text-2xl 
+                      font-semibold border border-red-500 hover:px-4 md:px-8 md:py-3 px-4 py-2 "
       >
         invictus⚡
       </div>

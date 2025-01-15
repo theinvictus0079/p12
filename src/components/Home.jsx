@@ -43,9 +43,9 @@ const Home = () => {
         </motion.div>
 
         <div className="">
-          <div className="transition-all duration-300  ease-in-out shadow-lg shadow-red-600 hover:shadow-none md:mt-16 mt-10 flex justify-between items-center pl-2 pr-1 py-2 bg-red-500 text-lg hover:text-white font-sans rounded-lg w-[160px] h-[35px]">
+          <div className="transition-all duration-300  ease-in-out shadow-lg shadow-red-600 hover:shadow-none md:mt-16 mt-10 flex justify-between items-center pl-2 pr-1 py-2 bg-red-500 text-md hover:text-white font-sans rounded-lg w-[160px] h-[35px]">
             <div 
-            >Hire me
+            >get in Touch
             </div>
             <motion.div 
             initial={{ opacity: 0, x: 120 }} 
@@ -57,6 +57,15 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
+
+        <motion.div 
+        initial={{ opacity: 0, scale:0.3 }} 
+        whileInView={{ opacity: 1 , scale:1}} 
+        viewport={{ once: false }} 
+        transition={{ duration: 1.5, ease: "easeInOut" }}
+        className="md:mt-24 my-8 rounded-md font-mono  transition-all ease-in-out   shadow-lg shadow-red-600 hover:shadow-none bg-red-500 text-lg hover:text-white p-2">
+          Creative web developer offering portfolio, landing page, and CV services.
+        </motion.div>
 
         
       </div>
@@ -122,11 +131,11 @@ const Home = () => {
          whileInView={{ opacity: 1, y: 0 }} 
          viewport={{ once: false }} 
          transition={{ duration: 1.3, ease: "easeInOut" }}
-        className="mt-8 md:mt-32 text-xl transition-all duration-300 ease-in-out hover:bg-red-500 hover:text-red-100 hover:rounded-t-xl text-red-500 px-2 py-1 flex justify-center items-center gap-x-2 w-[180px]">
+        className=" shadow-lg shadow-red-700 hover:shadow-none mt-8 md:mt-32 text-xl transition-all duration-300 ease-in-out bg-red-500 hover:text-red-100 text-black rounded-xl  px-2 py-1 flex justify-center items-center gap-x-2 w-[180px] ">
           Download CV <AiOutlineDownload />
         </motion.div>
-        <div className="bg-red-500 h-[1px] w-[180px]"></div>
       </div>
+
     </div>
   );
 };

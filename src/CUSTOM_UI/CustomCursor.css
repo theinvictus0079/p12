@@ -1,0 +1,26 @@
+html {
+    cursor: none; 
+  }
+  
+.cursor {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.1s ease-out;
+  }
+  
+  .cursor__follower {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 242, 3);
+  }
+
+ 
