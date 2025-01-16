@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import p from "../assets/robot2.avif";
 import { IoMdArrowForward } from "react-icons/io";
 import { AiOutlineDownload } from "react-icons/ai";
-import { GiWorld } from "react-icons/gi";
+import { name } from "../assets/Constant";
 
 const Home = () => {
   return (
@@ -29,7 +29,7 @@ const Home = () => {
           transition={{ duration: 1.3, ease: "easeInOut" }}
           className="text-4xl mt-4"
         >
-          I'm <span className="text-red-500">Invictus</span>
+          I'm <span className="text-red-500">{ name }</span>
         </motion.div>
 
         <motion.div

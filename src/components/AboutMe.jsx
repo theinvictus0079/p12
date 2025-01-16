@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import p from "../assets/robot2.avif";
 import Social from "./Social";
 import NumberUI from "../CUSTOM_UI/NumberUI";
-
+import { name } from "../assets/Constant";
 const AboutMe = () => {
 
     const data = [
@@ -29,16 +29,20 @@ const AboutMe = () => {
       <div className=" w-[300px] md:w-[500px] flex flex-col justify-center font-sans font-semibold pt-10 ">
         <motion.div 
         
-        className="p-3 text-red-600 font-semibold text-2xl">About me</motion.div>
-        <motion.div
+        class="pl-2 px-8 z-30 py-4 w-[200px] rounded-md text-red-600  hover:text-white   font-extrabold relative  after:-z-20 after:absolute after:h-1 after:w-1 after:bg-red-500 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 [text-shadow:3px_5px_2px_#4d4747;] hover:[text-shadow:2px_2px_2px_#fda4af] text-2xl">
+        About me
         
+        </motion.div>
+        <div className="ml-2 my-2 w-[80%] h-[1px] bg-red-500"></div>
+
+        <motion.div
         initial={{ opacity: 0,  x: 200 }}
         whileInView={{ opacity: 1,  x: 0 }}
         viewport={{ once: false }}        
         transition={{ duration: 1.3, ease: "easeInOut" }}
         
         className="p-3 text-center md:text-start leading-loose">
-          Invictus is a passionate software engineer specializing in web
+          { name } is a passionate software engineer specializing in web
           development and design. With expertise in React and Tailwind CSS, she
           creates stunning portfolio websites, landing pages, and offers CV
           review services. Dedicated to helping others grow their online

@@ -2,25 +2,24 @@ import React, { useState } from "react";
 import Button from "../CUSTOM_UI/Button";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
-
+import { name } from "../assets/Constant";
 const Header = () => {
-  const [ShowMenu, setShowMenu] = useState(false); // Initially, set to false to hide menu on mobile
 
+  const [ShowMenu, setShowMenu] = useState(false); 
   const toggleItems = () => {
-    const isMobile = window.innerWidth < 1024; // Only toggle on mobile screens (less than 1024px)
+    const isMobile = window.innerWidth < 1024; 
     if (isMobile) {
-      setShowMenu(!ShowMenu); // Toggle menu on mobile
+      setShowMenu(!ShowMenu); 
     }
   };
 
   return (
     <div className="  z-50 relative flex justify-around items-center">
-      {/* nav logo */}
       <div
         className=" rounded-lg bg-[#e21515] hover:shadow-none shadow-lg shadow-red-600 hover:bg-[#eb0f0f] hover:text-white transition-all duration-300 md:text-2xl 
-                      font-semibold border border-red-500 hover:px-4 md:px-8 md:py-3 px-4 py-2 "
+          font-semibold border border-red-500 hover:px-4 md:px-8 md:py-3 px-4 py-2 "
       >
-        invictus⚡
+        { name }⚡
       </div>
 
       {/* nav toggle (visible only on mobile) */}
