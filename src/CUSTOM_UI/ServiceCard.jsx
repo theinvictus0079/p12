@@ -1,16 +1,36 @@
 import React from "react";
+import { motion } from "motion/react";
 
-const ServiceCard = ({service}) => {
+const ServiceCard = ({ service }) => {
   return (
     <div>
-      <div className="service-card w-[300px] h-[220px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 hover:bg-white flex flex-col items-start gap-3 transition-all duration-300 group bg-[#202127]">
-        <p className="font-bold text-2xl group-hover:text-red-500 text-neutral-400">
+      <style>
+        {`
+        html {
+  cursor: none; 
+}`}
+      </style>
+
+      <div className="border border-red-300 relative service-card w-[340px] h-[250px] shadow-xl snap-start shrink-0 py-8 px-6 hover:bg-white flex flex-col items-start gap-3 transition-all duration-300 group bg-[#202127]">
+        <motion.p
+          initial={{ opacity: 0, x: 300 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1.3, ease: "easeInOut" }}
+          className="font-bold text-2xl group-hover:text-red-500 underline underline-offset-2 text-neutral-400"
+        >
           {service.title}
-        </p>
-        <p className="text-gray-300 group-hover:text-gray-800 text-sm">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, scale: 0.3 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1.3, ease: "easeInOut" }}
+          className="mt-4 text-gray-300 group-hover:text-gray-800 text-lg font-semibold"
+        >
           {service.desc}
-        </p>
-        <p className="text-5xl font-bold self-end ">{service.num}</p>
+        </motion.p>
+        <p className="absolute top-[75%] right-4 bg-neutral-500 rounded-sm p-2 text-3xl  font-bold ">{service.num}</p>
       </div>
     </div>
   );

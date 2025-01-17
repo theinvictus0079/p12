@@ -8,6 +8,7 @@ const Button = ({ data }) => {
               
  
 .fancy {
+width: 200px;
  background-color: #e21515;
  border: 2px solid #000;
  border-radius: 0;

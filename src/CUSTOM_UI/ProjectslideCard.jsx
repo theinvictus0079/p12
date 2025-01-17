@@ -7,6 +7,8 @@ const ProjectslideCard = ({data}) => {
     <div>
       <style>
         {`
+
+       
 .card3d {
   position: relative;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -30,7 +32,7 @@ const ProjectslideCard = ({data}) => {
   position: absolute;
   gap: .5em;
   flex-direction: column;
-  height: 100%;
+  height: 50%;
   bottom: 0;
   border-radius: 16px;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -44,7 +46,7 @@ const ProjectslideCard = ({data}) => {
 
 `}
       </style>
-      <div className="border border-red-300 card3d md:w-[500px] w-[350px] md:h-[370px] h-[320px]">
+      <div className="  border border-red-300 card3d md:w-[500px] w-[350px] md:h-[370px] h-[320px]">
         <div className="card-image3d  flex flex-col justify-start items-centre">
           <div className=" h-[250px] md:h-[290px] md:w-[500px] w-[350px]">
             <motion.img

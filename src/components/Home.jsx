@@ -131,7 +131,7 @@ const Home = () => {
          whileInView={{ opacity: 1, y: 0 }} 
          viewport={{ once: false }} 
          transition={{ duration: 1.3, ease: "easeInOut" }}
-        className=" shadow-lg shadow-red-700 hover:shadow-none mt-8 md:mt-32 text-xl transition-all duration-300 ease-in-out bg-red-500 hover:text-red-100 text-black rounded-xl  px-2 py-1 flex justify-center items-center gap-x-2 w-[180px] ">
+        className="py-2 shadow-lg shadow-red-700 hover:shadow-none mt-8 md:mt-32 text-xl transition-all duration-300 ease-in-out bg-red-500 hover:text-red-100 text-black rounded-xl  px-2  flex justify-center items-center gap-x-2 w-[180px] ">
           Download CV <AiOutlineDownload />
         </motion.div>
       </div>

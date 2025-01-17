@@ -4,10 +4,14 @@ const ProjectButton = () => {
   return (
     <div>
       <style>{`
+button {
+    cursor: none; 
+  }
+  
 .learn-more {
  position: relative;
  display: inline-block;
- cursor: pointer;
+
  outline: none;
  border: 0;
  vertical-align: middle;
