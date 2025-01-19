@@ -30,7 +30,12 @@ const ServiceCard = ({ service }) => {
         >
           {service.desc}
         </motion.p>
-        <p className="absolute top-[75%] right-4 bg-neutral-500 rounded-sm p-2 text-3xl  font-bold ">{service.num}</p>
+        <motion.p
+        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ duration: 4, ease: "easeInOut" }}
+        className="absolute top-[75%] right-4 bg-red-500 rounded-sm p-2 text-3xl  font-bold ">{service.num}</motion.p>
       </div>
     </div>
   );

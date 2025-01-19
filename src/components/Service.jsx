@@ -1,7 +1,8 @@
 import React from "react";
 import ServiceCard from "../CUSTOM_UI/ServiceCard";
-
+import { motion } from "motion/react";
 const Service = () => {
+
   const data = [
     {
       title: "Web development",
@@ -37,10 +38,34 @@ const Service = () => {
       </div>
 
       <div className="mt-20 px-12 flex flex-wrap justify-center items-center gap-x-14 gap-y-10">
-        {data.map((service, index) => (
-          <div key={index}>
-            <ServiceCard  service={service} />
-          </div>
+        {data.map((services, index) => (
+          <motion.div 
+          
+          initial={{  }} 
+          animate={{
+            
+            scale: [1, 1.02, 1], // Pulsing effect (slightly enlarges and returns to normal)
+            boxShadow: [
+              "0px 0px 0px red", // No shadow
+              "0px 10px 30px red", // Soft shadow
+              "0px 0px 0px red", // Back to no shadow
+            ],
+          }}
+          transition={{
+            duration: 2, // Duration of the full animation cycle
+            ease: "easeInOut",
+            repeat: Infinity, // Loop the animation
+          }}
+          whileHover={{
+            scale: 1, // Stops pulsing by fixing the scale
+            boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)", // Keeps the shadow static
+            transition: { duration: 0.3, ease: "easeInOut" }, // Smooth hover transition
+          }}
+
+          className=""
+          key={index}>
+            <ServiceCard  service={services} />
+          </motion.div>
         ))}
       </div>
     </div>

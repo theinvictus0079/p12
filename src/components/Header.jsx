@@ -11,6 +11,7 @@ const Header = (
   scrollToSecondPage,
   scrollToThirdPage,
   scrollToFourthPage,
+  scrollToFifthPage,
 }
 
 ) => {
@@ -58,13 +59,16 @@ const Header = (
           <Button  data="Home" />
         </div>
         <div onClick={() => { scrollToSecondPage(); toggleItems(); }}>
-          <Button onClick={scrollToSecondPage} data="About" />
+          <Button  data="About" />
         </div>
         <div onClick={() => { scrollToThirdPage(); toggleItems(); }}>
-          <Button onClick={scrollToThirdPage} data="Projects" />
+          <Button  data="Projects" />
         </div>
         <div onClick={() => { scrollToFourthPage(); toggleItems(); }}>
-          <Button onClick={scrollToFourthPage} data="Service" />
+          <Button  data="Service" />
+        </div>
+        <div onClick={() => { scrollToFifthPage(); toggleItems(); }}>
+          <Button data="Contact" />
         </div>
       </motion.div>
     </div>

@@ -6,6 +6,7 @@ import Home from './components/Home'
 import CustomCursor from './CUSTOM_UI/CustomCursor'
 import Service from './components/Service'
 import React,{ useRef } from 'react'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     const secondPageRef = useRef(null);
     const thirdPageRef = useRef(null);
     const fourthPageRef = useRef(null);
+    const fifthPageRef = useRef(null);
 
     const scrollToSection = (ref) => {
       ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -29,6 +31,7 @@ function App() {
            scrollToSecondPage={() => scrollToSection(secondPageRef)}
            scrollToThirdPage={() => scrollToSection(thirdPageRef)}
            scrollToFourthPage={() => scrollToSection(fourthPageRef)}
+           scrollToFifthPage={()=> scrollToSection(fifthPageRef)}
           />
           </div>
           
@@ -37,6 +40,7 @@ function App() {
             <div ref={secondPageRef} ><AboutMe/></div>
             <div ref={thirdPageRef} ><Project/></div>
             <div ref={fourthPageRef} ><Service/></div>
+            <div ref={fifthPageRef} ><Contact/></div>
           </div>
 
       </div>

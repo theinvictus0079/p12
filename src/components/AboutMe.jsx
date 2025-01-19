@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import p from "../assets/robot2.avif";
-import Social from "./Social";
+import Social from "../CUSTOM_UI/Social"
 import NumberUI from "../CUSTOM_UI/NumberUI";
 import { name } from "../assets/Constant";
 const AboutMe = () => {

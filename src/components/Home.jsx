@@ -6,6 +6,14 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { name } from "../assets/Constant";
 
 const Home = () => {
+
+  const scrollToContact = () => {
+    const contactElement = document.getElementById('contactid');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className=" mt-10 md:mt-0 md:relative md:h-screen md:px-[10%] flex flex-col md:flex-row justify-center lg:justify-between md:justify-between md:items-start lg:items-start items-center">
       {/* left  */}
@@ -42,9 +50,12 @@ const Home = () => {
           Software Engineer
         </motion.div>
 
-        <div className="">
+        <div
+        onClick={scrollToContact}
+        className="">
           <div className="transition-all duration-300  ease-in-out shadow-lg shadow-red-600 hover:shadow-none md:mt-16 mt-10 flex justify-between items-center pl-2 pr-1 py-2 bg-red-500 text-md hover:text-white font-sans rounded-lg w-[160px] h-[35px]">
             <div 
+           
             >get in Touch
             </div>
             <motion.div 
